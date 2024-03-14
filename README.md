@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# Visão Geral do Projeto
+Este projeto é uma aplicação web para rastrear dados de criptomoedas. Ele fornece funcionalidades como visualização de detalhes de criptomoedas, busca por criptomoedas específicas e exibição de uma lista das principais criptomoedas por capitalização de mercado.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Funcionalidades 
 
-Currently, two official plugins are available:
+  - ### Página Inicial:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+     - Exibe uma barra de pesquisa para buscar criptomoedas por símbolo.
+     - Lista as principais criptomoedas por capitalização de mercado.
+     - Cada criptomoeda na lista é clicável e redireciona para sua página de detalhes.
 
-## Expanding the ESLint configuration
+  - ### Página de Detalhes:
+  
+     - Exibe informações detalhadas sobre uma criptomoeda específica.
+     - As informações incluem nome, símbolo, preço atual, capitalização de mercado, altos/baixos das últimas 24 horas e delta de 24 horas.
+  
+  - ### Página Não Encontrada:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+     - Renderiza uma página 404 quando uma página solicitada não é encontrada.
+     - Fornece um link para retornar à página inicial.
 
-- Configure the top-level `parserOptions` property like this:
+# Tecnologias Utilizadas
+    
+ - React.js: Utilizado para construir o front-end da aplicação.
+ - React Router: Usado para roteamento entre diferentes páginas da aplicação.
+ - Módulos CSS: Empregado para estilizar componentes individuais do React.
+ - Fetch API: Utilizado para buscar dados da API de criptomoedas.
+ - Internacionalização (Intl): Usado para formatar valores de moeda.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Instalação
+
+1- Clone o repositório:
+
+    git clone <repository_url>
+2- Navegue até p diretório do projeto:
+
+    cd projeto-crypto
+
+           
+3- Instale as dependências:
+
+    npm install     
+
+4- Execulte a plicaçãp:
+
+    npm run dev
+
+# Uso
+
+- Ao acessar a aplicação, você será direcionado para a página inicial, onde poderá ver uma lista das principais criptomoedas e buscar criptomoedas específicas usando a barra de pesquisa.
+
+- Clicar em uma criptomoeda na lista irá redirecioná-lo para sua página de detalhes, onde você pode visualizar informações mais detalhadas.
+- Se você navegar para uma página inexistente, será redirecionado para a página 404.
