@@ -32,7 +32,8 @@ Este projeto é uma aplicação web para rastrear dados de criptomoedas. Ele for
 
 1- Clone o repositório:
 
-    git clone <repository_url>
+    git clone https://github.com/erliwanderson/projeto-crypto.git
+
 2- Navegue até p diretório do projeto:
 
     cd projeto-crypto
