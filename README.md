@@ -52,3 +52,7 @@ Este projeto é uma aplicação web para rastrear dados de criptomoedas. Ele for
 
 - Clicar em uma criptomoeda na lista irá redirecioná-lo para sua página de detalhes, onde você pode visualizar informações mais detalhadas.
 - Se você navegar para uma página inexistente, será redirecionado para a página 404.
+
+# Resultado final 
+
+Deploy [aqui](https://projeto-crypto.vercel.app/)
